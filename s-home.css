@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: 'Dancing Script', cursive;*/
+    font-family: 'Nunito', sans-serif;
+}
+header{
+    position: fixed;
+    top: 1px;
+    left: 0;
+    transition: 0.6s;
+    width: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(100px);
+    height: 70px;
+    display: flex;
+    z-index: 100000;
+}
+/* header.sticky{
+   padding: 5px;
+   background: white;
+} */
+.logo{
+    height: 100%;
+    width: 250px;
+    
+}
+.img-logo{
+    height: 50px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+    border-radius: 2px;
+}
+.item-1{
+    
+    width: 920px;
+    height: 60%;
+    border-radius: 50px;
+    
+}
+.item-1 ul{
+    display: flex;
+    position: relative;
+    padding-top: 16px ;
+    justify-content: space-evenly;  
+}
+.item-1 ul li {
+    list-style: none;
+}
+.item-1 ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 100px;
+}
+.item-1 ul li a:hover{
+    color: rgb(42, 69, 46);
+}
+.item-1 ul li a:hover span{
+    transition: 0.7s ease-in-out;
+    background-color: rgb(42, 69, 46);
+    height: 1.5px;
+    display: block;
+}
+.icons{
+    color: black;
+    display: flex;
+    width: 200px;
+    position: relative;
+    left:150px;
+    font-size: 25px;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 50px;
+}
+.front{
+    
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    animation: slider 12s infinite linear;
+}
+@keyframes slider{
+    0%{
+        background-image: url(./sli7.jpg);
+    }
+    35%{
+        background-image: url(./sli3.jpg);
+    }
+    75%{
+        background-image: url(./sli4.jpg);
+    }
+    100%{
+        background-image: url(./sli6.jpg);
+    }
+    0%{
+        background-image: url(./sli7.jpg);
+    }
+}
+.front h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    position: relative;
+    top: 300px;
+    left: 65px;
+    width: 400px;
+    color: white;
+}
+.front h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
+    position: relative;
+    top: 300px;
+    left: 50px;
+    width: 600px;
+    text-align: center;
+    color: white;
+}
+.front h2:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+button{
+    width: 180px;
+    height: 50px;
+    position: relative;
+    top: 320px;
+    left: 190px;
+    border: none;
+    font-size: 18px;
+}
+
+button a{
+    text-decoration: none;
+    color:black;
+}
+button a:hover{
+    transition-duration: 0.8s;
+    box-shadow: 0px 2px 0px 0px black;
+}
+.social-icons{
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    height: 180px;
+    justify-content: space-evenly;
+    width: 55px;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    left: 1464px;
+    top: -150px;
+    color: black;
+    border-radius: 5px;
+}
+.collection{
+    background-color: rgb(171, 230, 139);
+    width: 85%;
+    height: 150px;
+    position: relative;
+    top: 350px;
+    left: 100px;
+}
+.collection h1{
+    font-family: 'Dancing Script', cursive;
+    color: rgb(15, 62, 5);
+    text-align: center;
+    font-size: 100px;
+    opacity:15%;
+}
+.collection h5{
+    font-family: 'Dancing Script', cursive;
+    color: rgb(7, 77, 17);
+    text-align: center;
+    font-size: 80px;
+    position: relative;
+    top: -90px;
+    
+}
+.collection h6{
+    /*font-family: 'Dancing Script', cursive;*/
+    color: rgb(16, 75, 26);
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    top: -120px;
+    left: 0px;
+}
+.white{
+    height: 50px;
+}
+.best-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 750px;
+    background-image: url(./back6.jpg);
+    background-color: rgb(137, 197, 25);
+    background-position: center;
+    background-size: cover;
+}
+.row-1{
+    display: flex;
+}
+.box-1{
+    background-image: url(./s-s.webp);
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    width: 25%;
+    position: relative;
+    left: 280px;
+    border: white;
+    border-style: solid;
+}
+.box-2{
+    background-image: url(./s-b.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    width: 35%;
+    position: relative;
+    left: 300px;
+    border: white;
+    border-style: solid;
+}
+.box-3{
+    background-image: url(./s-c.webp);
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    width: 35%;
+    position: relative;
+    left: 280px;
+    border: white;
+    border-style: solid;
+}
+.box-4{
+    background-image: url(./o-s1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    width: 25%;
+    position: relative;
+    left: 300px;
+    border: white;
+    border-style: solid;
+}
+.box-1 h2:hover,.box-2 h2:hover,.box-3 h2:hover,.box-4 h2:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+.box-1 h2,.box-4 h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 55px;
+    position: relative;
+    text-align: center;
+    top: 50px;
+    left: 100px;
+    width: 180px;
+    color: white;
+}
+.box-2 h2,.box-3 h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 55px;
+    position: relative;
+    text-align: center;
+    top: 50px;
+    left: 150px;
+    width: 180px;
+    color: white; 
+}
+
+.ser-box{
+    display: flex;
+    justify-content: space-evenly;
+    height: 80px;
+    position: relative;
+    top: -60px;
+    /*background-image: url(./back9.jpg);
+    background-size: cover;
+    background-position: center;*/
+}
+.service-box{
+    background-color: rgb(241, 236, 236);
+    height: 130px;
+    width: 270px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0px 0.5px rgb(26, 45, 61);
+    position: relative;
+    top: 15px;
+}
+.service-container h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
+    text-align: center;
+    background-color: rgb(212, 219, 250);
+    height: 170px;
+    color: rgb(26, 45, 61);
+}
+.service-box h2{
+    /* font-family: 'Dancing Script', cursive; */
+    font-size: 32px;
+    font-weight: bold;
+    width: 65%;
+    color: rgb(26, 45, 61);
+    text-align: center;
+    position: relative;
+    top: 10px;
+    left: 35px;
+}
+.special-products-text{
+    height: 150px;
+}
+.special-products-text h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
+    text-align: center;
+    color: rgb(65, 11, 68);
+    background-color: rgb(218, 180, 240);
+    height: 150px;
+    opacity: 20%;
+}
+.special-products-text h6{
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+    position: relative;
+    top: -130px;
+    text-align: center;
+    color: rgb(16, 14, 16);
+    height: 150px;
+}
+
+.icons a{
+    color: black;
+} 
+.icons a:hover{
+    color: rgb(26, 56, 16);
+}
+.popup{
+    background-color: rgba(171, 217, 122, 0.5);
+    width: 100%;
+    height: 1500px;
+    position: absolute;
+    display: none;
+    justify-content: center;
+}
+.popup-content h1 {
+    text-align: center;
+    height: 60px;
+    color: rgb(113, 108, 108);
+    font-weight: bolder;
+    padding: 10px;
+}
+
+.login-form h2 {
+    font-size: 12px;
+    position: relative;
+    left: 25px;
+    color: #a14f07d6;
+}
+
+.login-input {
+    width: 85%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    left: 20px;
+}
+
+.log-input {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border-color: #bd9470d6;
+    border-style: solid;
+}
+
+.log-btn {
+    width: 90px;
+    height: 35px;
+    position: relative;
+    left: 0px;
+    top: 5px;
+    font-size: 18px;
+    border-radius: 16px;
+    color: white;
+    box-shadow: 0px 0px 2px 1px rgb(74, 73, 73);
+    background-color: #084278d6;
+    font-weight: bolder;
+}
+
+.log-btn:hover {
+    background-color: rgb(7, 22, 95);
+}
+
+.popup-content {
+    height: 450px;
+    width: 350px;
+    padding: 2px;
+    border-radius: 5px;
+    position: relative;
+    background-color: white;
+    border:4px solid rgb(79, 78, 78);
+    top: 100px;
+    text-align: center;
+    box-shadow: 0px 0px 40px 1px rgb(62, 66, 61);
+    z-index: 10;
+}
+.user{
+    font-size: 80px;
+    background-color: rgb(155, 154, 154);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    color: #084278d6;
+    align-items: center;
+    position: relative;
+    left: 110px;
+}
+#login-button{
+    padding-top: 15px;
+}
+#close-btn{
+    color: white;
+    background-color: #084278d6;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 5px;
+    position: relative;
+    left: 150px;
+    top: 5px;
+}
+#close-btn:hover {
+    background-color: rgb(7, 22, 95);
+}
+.client{
+    background-image: url(./cls.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+}
+.client h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+
+.pink{
+    width: 100%;
+    height: 350px;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-evenly;
+}
+.pink-1{
+    width: 45%;
+    height: 80%;
+    /* border: 2px solid black; */
+    background-color: transparent;
+    position: relative;
+    top: 50px;
+}
+.pink-1 h2{
+    text-align: center;
+    width: 85%;
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: 'Dancing Script', cursive;
+}
+.pink-1 h3{
+    padding-top: 40px;
+    position: relative;
+    left: 220px;
+    width: 100px;
+    font-weight: lighter;
+    font-family: 'Dancing Script', cursive;
+}
+.client-say{
+    position: relative;
+    left: 250px;
+    top: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+/* .review-btn {
+    position: relative;
+    left: 600px;
+    z-index: 10;
+    border-radius: 5px;
+    height: 60px;
+}
+.review-btn :hover{
+    background-color: goldenrod;
+    border-radius: 50px;
+} */
+.footer{
+    background-color: rgb(171, 230, 139);
+    /* background-image: url(./back6.jpg);
+    background-position: center;
+    background-size: cover; */
+    height: 400px;
+}
+.head{
+    background-color: black;
+    text-align: center;
+    position: relative;
+    top: 500px;
+}
+.cols{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+}
+.col{
+    height: 200px;
+    position: relative;
+    top: 70px;
+    background-color: transparent;
+}
+.col h2{
+    color: rgb(8, 24, 6);
+    background-color: transparent;
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+}
+.col h2:hover{
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+}
+.col ul{
+    background-color: transparent;
+}
+.col ul li{
+    position: relative;
+    top: 20px;
+    background-color: transparent;
+    list-style:none;
+}
+.col ul li a{
+    color: rgb(8, 24, 6);
+    transition:  all 0.3s ease;
+    background-color:  transparent;
+    text-decoration: none;
+}
+.col ul li a:hover{
+    color:  rgb(164, 112, 6);
+    padding-left: 8px;
+    font-weight: bold;
+}
+.social{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    width: 180px;
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    top: 15px;
+    align-items: center;
+    color: white;
+}
+.social i{
+    background-color:rgb(8, 24, 6);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+}
+.social i::before{
+    position: relative;
+    top: 7px;
+}
+.social a{
+    background-color: transparent;
+}
+.social a:hover{
+    color:   rgb(164, 112, 6);
+    border-radius: 50%;
+    
+}
+.input-sign-up{
+    position: relative;
+    left: 1100px;
+    top: 50px;
+    width: 350px;
+    height: 40px;
+}
+.in-up{
+    width: 100%;
+    height: 100%;
+    border-color: rgb(191, 228, 226);
+    border-style: solid;
+    background-color: transparent;
+    color:  black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.sign-btn{
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: none;
+    position: relative;
+    top: 70px;
+    left: 1100px;
+    font-size: 17px;
+}
+.sign-btn:hover{
+    background-color:  rgb(164, 112, 6);
+}
